@@ -72,4 +72,551 @@
 
                 <!-- Mobile menu button -->
                 <div class="flex md:hidden">
-                    <button id="mobile-menu-btn" type="button" class="text-slate-700 hover:text-brand-terracotta p-2 rounded-md focus:outline-none" aria-label="Abrir
+                    <button id="mobile-menu-btn" type="button" class="text-slate-700 hover:text-brand-terracotta p-2 rounded-md focus:outline-none" aria-label="Abrir Menú">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#productos" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-terracotta">Productos</a>
+            <a href="#como-trabajamos" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-terracotta">Cómo trabajamos</a>
+            <a href="#galeria" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-terracotta">Galería</a>
+            <a href="#preguntas" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-terracotta">Preguntas</a>
+            <a href="https://wa.me/5491173621101?text=Hola%20M%C3%A9trica,%20quisiera%20pedir%20un%20presupuesto" target="_blank" class="w-full mt-2 inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white px-5 py-3 rounded-lg font-medium text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Pedí tu presupuesto</span>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="py-12 md:py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <!-- Badge -->
+                    <div class="inline-block">
+                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold bg-[#F9F1E6] text-[#8C3A13] tracking-wide">
+                            Blackout · Sunscreen · Gasa · Riel
+                        </span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy leading-tight tracking-tight">
+                        Cortinas roller y de gasa a medida, con instalación en CABA y GBA
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                        Medimos, fabricamos e instalamos. Entrega en 10 a 15 días hábiles y garantía en mecanismos e instalación.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="https://wa.me/5491173621101?text=Hola%20M%C3%A9trica,%20quisiera%20pedir%20un%20presupuesto" target="_blank" class="inline-flex justify-center items-center gap-2.5 bg-brand-terracotta hover:bg-brand-terracottaHover text-white px-6 py-3.5 rounded-lg font-semibold text-sm transition-all shadow-md hover:shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pedí tu presupuesto por WhatsApp</span>
+                        </a>
+                        <a href="#galeria" class="inline-flex justify-center items-center px-6 py-3.5 border-2 border-slate-300 hover:border-brand-navy text-slate-800 hover:text-brand-navy rounded-lg font-semibold text-sm transition-colors bg-white">
+                            Ver trabajos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3]">
+                        <img 
+                            src="hero.jpg" 
+                            alt="Living luminoso con cortinas de gasa a medida por Métrica" 
+                            class="w-full h-full object-cover"
+                            onerror="this.src='https://placehold.co/800x600/F9F6F0/192231?text=Métrica+Cortinas'"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== 3. PRODUCTOS ==================== -->
+    <section id="productos" class="py-16 bg-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+                    Cortinas Roller, Gasa y Riel a Medida
+                </h2>
+                <p class="mt-3 text-base text-slate-600">
+                    Elegí el sistema ideal para cada ambiente de tu casa o departamento en CABA y GBA
+                </p>
+            </div>
+
+            <!-- Products Grid (4 Columns) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Blackout -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden">
+                            <img src="blackout.jpg" alt="Roller Blackout Métrica" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-brand-navy mb-2">Roller Blackout</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Oscurece del todo; ideal para dormitorios y salas de TV.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/5491173621101?text=Hola,%20quisiera%20consultar%20por%20Roller%20Blackout" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white py-2.5 px-4 rounded-lg text-sm font-semibold transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Consultar por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Sunscreen -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden">
+                            <img src="galeria5.jpg" alt="Roller Sunscreen Métrica" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-brand-navy mb-2">Roller Sunscreen</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Filtra el sol sin perder la vista al exterior y mantiene frescos los ambientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/5491173621101?text=Hola,%20quisiera%20consultar%20por%20Roller%20Sunscreen" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white py-2.5 px-4 rounded-lg text-sm font-semibold transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Consultar por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Gasa -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden">
+                            <img src="gasa.jpg" alt="Cortinas de Gasa Métrica" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-brand-navy mb-2">Gasa / Lino</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Aporta calidez, luz natural suave y vestir elegante para livings y comedores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/5491173621101?text=Hola,%20quisiera%20consultar%20por%20Cortinas%20de%20Gasa/Lino" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white py-2.5 px-4 rounded-lg text-sm font-semibold transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Consultar por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Riel -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden">
+                            <img src="riel.jpg" alt="Sistemas de Riel Métrica" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-brand-navy mb-2">Riel</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Deslizamiento suave para cortinados de tela tradicionales con riel invisible o decorativo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/5491173621101?text=Hola,%20quisiera%20consultar%20por%20Sistemas%20de%20Riel" target="_blank" class="w-full inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white py-2.5 px-4 rounded-lg text-sm font-semibold transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Consultar por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== 4. CÓMO TRABAJAMOS ==================== -->
+    <section id="como-trabajamos" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+                    Cómo Trabajamos
+                </h2>
+                <p class="mt-3 text-base text-slate-600">
+                    4 pasos simples de la consulta a la instalación de tu cortina a medida
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Step 1 -->
+                <div class="bg-brand-sand/60 rounded-xl p-6 border-t-4 border-brand-terracotta flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-extrabold text-brand-terracotta block mb-3">1</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">Nos escribís por WhatsApp</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Nos contás qué ambiente querés vestir o nos mandás las medidas aproximadas de tus ventanas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-brand-sand/60 rounded-xl p-6 border-t-4 border-brand-terracotta flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-extrabold text-brand-terracotta block mb-3">2</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">Medimos o te guiamos</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Coordinamos la medición en tu domicilio en CABA y GBA o te guiamos paso a paso para medir sin errores.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-brand-sand/60 rounded-xl p-6 border-t-4 border-brand-terracotta flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-extrabold text-brand-terracotta block mb-3">3</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">Fabricamos en 10 a 15 días</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Confeccionamos tus cortinas roller o de gasa a la medida exacta de tus aberturas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-brand-sand/60 rounded-xl p-6 border-t-4 border-brand-terracotta flex flex-col justify-between">
+                    <div>
+                        <span class="text-3xl font-extrabold text-brand-terracotta block mb-3">4</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">Instalamos</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Nuestro equipo coloca tus cortinas dejándolas listas para usar y con terminaciones impecables.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== 5. INSTALACIÓN GARANTIZADA ==================== -->
+    <section class="py-16 bg-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+                    Instalación Garantizada en CABA y GBA
+                </h2>
+                <p class="mt-3 text-base text-slate-600">
+                    Tu tranquilidad es nuestro compromiso en cada trabajo
+                </p>
+            </div>
+
+            <!-- 3 Benefit Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-8 text-center border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-50 text-brand-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">Garantía Escrita</h3>
+                    <p class="text-sm text-slate-600">
+                        Respaldamos nuestros mecanismos, telas e instalación.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-8 text-center border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-50 text-brand-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">Medios de Pago</h3>
+                    <p class="text-sm text-slate-600">
+                        Efectivo, transferencia bancaria y tarjetas de crédito o débito.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-8 text-center border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-50 text-brand-terracotta rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">Zona de Cobertura</h3>
+                    <p class="text-sm text-slate-600">
+                        Instalación a domicilio en toda la Ciudad de Buenos Aires y Gran Buenos Aires.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Dark Navy Banner -->
+            <div class="bg-brand-navy text-white rounded-xl p-6 sm:p-8 text-center shadow-lg">
+                <p class="text-base sm:text-lg font-medium tracking-wide">
+                    Más de 500 instalaciones realizadas en casas, departamentos particulares y desarrollos residenciales en CABA y GBA.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== 6. GALERÍA / TRABAJOS REALES ==================== -->
+    <section id="galeria" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+                    Fotos de Trabajos Reales
+                </h2>
+                <p class="mt-3 text-base text-slate-600">
+                    Instalaciones de cortinas roller, blackout y gasa en hogares de CABA y GBA
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="aspect-square rounded-xl overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="hero.jpg" alt="Trabajo real Métrica 1" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="galeria2.jpg" alt="Trabajo real Métrica 2" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="blackout.jpg" alt="Trabajo real Métrica 3" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="gasa.jpg" alt="Trabajo real Métrica 4" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="galeria4.jpg" alt="Trabajo real Métrica 5" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== 7. PREGUNTAS FRECUENTES (FAQ) ==================== -->
+    <section id="preguntas" class="py-16 bg-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy tracking-tight">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="mt-3 text-base text-slate-600">
+                    Respuestas simples y rápidas sobre cortinas roller y gasa a medida
+                </p>
+            </div>
+
+            <!-- FAQ Grid (3 Columns x 2 Rows) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Q1 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿Cómo mido mi ventana?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Te guiamos paso a paso por WhatsApp con fotos y videos, o vamos a medir a tu domicilio si estás en CABA o GBA.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿La gasa se transparenta?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                De día permite ver hacia afuera con privacidad, pero de noche con luz prendida trasluce. Para dormitorios sugerimos combinarla con blackout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿Cuánto tarda?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                El tiempo de confección e instalación a medida es de 10 a 15 días hábiles desde la confirmación del pedido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿Hacen instalación?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Sí, nuestro equipo especializado realiza la instalación completa de cortinas roller, de gasa y rieles en CABA y GBA con garantía.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿Hacen envíos al interior?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Sí, despachamos cortinas a medida con instructivo listo para instalar a todo el país.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">?</span>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base mb-2">¿Cómo se paga?</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed">
+                                Podés pagar con transferencia bancaria, efectivo o tarjetas de crédito y débito.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== 8. BANNER OBRAS Y CONSTRUCTORAS ==================== -->
+    <section class="py-14 bg-[#F2E8D5] border-y border-amber-200/50">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-5">
+            <h3 class="text-xl sm:text-2xl font-bold text-brand-navy">
+                Atención a Obras y Constructoras
+            </h3>
+            <p class="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">
+                Provisión e instalación de cortinas roller y sistemas de control solar para emprendimientos, oficinas y desarrollos en CABA y GBA.
+            </p>
+            <div>
+                <a href="https://wa.me/5491173621101?text=Hola,%20quisiera%20cotizar%20un%20proyecto/obra" target="_blank" class="inline-flex justify-center items-center gap-2 bg-brand-terracotta hover:bg-brand-terracottaHover text-white px-6 py-3 rounded-lg font-semibold text-sm transition shadow-md">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Cotizar para obra</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== 9. FOOTER ==================== -->
+    <footer class="bg-brand-navy text-slate-300 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-slate-700/60">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo.png" alt="Métrica" class="h-8 w-auto object-contain brightness-0 invert">
+                        <span class="text-2xl font-extrabold text-white">Métrica</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed pr-4">
+                        Métrica · Cortinas roller, blackout, sunscreen y gasa a medida. Medición, fabricación e instalación en CABA y Gran Buenos Aires.
+                    </p>
+                </div>
+
+                <!-- Col 2: Contact Direct -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base tracking-wide">Contacto Directo</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li>
+                            <a href="https://wa.me/5491173621101" target="_blank" class="hover:text-white inline-flex items-center gap-2.5 transition">
+                                <i class="fa-brands fa-whatsapp text-brand-terracotta text-base w-4"></i>
+                                <span>+54 9 11 7362-1101</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" class="hover:text-white inline-flex items-center gap-2.5 transition">
+                                <i class="fa-brands fa-instagram text-brand-terracotta text-base w-4"></i>
+                                <span>@metrica.cortinas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:interiores.metrica@gmail.com" class="hover:text-white inline-flex items-center gap-2.5 transition">
+                                <i class="fa-regular fa-envelope text-brand-terracotta text-base w-4"></i>
+                                <span>interiores.metrica@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Location & Shipping -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base tracking-wide">Ubicación y Envíos</h4>
+                    <div class="space-y-2 text-sm text-slate-300">
+                        <p><strong class="text-white font-semibold">Atención e Instalaciones:</strong> CABA y Gran Buenos Aires.</p>
+                        <p><strong class="text-white font-semibold">Envíos:</strong> A todo el país.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>© Métrica. Todos los derechos reservados.</p>
+                <p>Cortinas roller, gasa y blackout a medida en CABA y GBA</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==================== 10. BOTÓN FLOTANTE WHATSAPP ==================== -->
+    <a href="https://wa.me/5491173621101?text=Hola%20M%C3%A9trica,%20quisiera%20hacer%20una%20consulta" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 active:scale-95"
+       aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+
+    <!-- JavaScript interactivo básico para Menú Mobile -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
